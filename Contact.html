@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Contact Get Fit Stay Fit - Reach out to our team for personalized fitness advice, questions about our programs, or general inquiries about health and wellness support.">
+    <meta name="keywords" content="contact form, fitness support, wellness inquiry, health consultation, fitness help">
+    <meta name="author" content="Enes Yigit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="icon" type="image/svg+xml" href="img/Favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section class="logo-container">
+            <img src="img/MyLogo.png" alt="Get Fit Stay Fit Logo" class="logo" title="Logo">
+            <h1 class="logo-text">Get Fit Stay Fit</h1>
+        </section>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Nutrition.html" class="nav-link">Nutrition</a>
+            <a href="Sleep.html" class="nav-link">Sleep</a>
+            <a href="Exercise.html" class="nav-link">Exercise</a>
+            <a href="Community.html" class="nav-link">Community</a>
+            <a href="Contact.html" class="nav-link active-link">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p class="required-text">asterisk Symbol Means Required to fill out</p>
+
+        <form action="ThankYou.html" method="get" class="contact-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="title">Mr./ Mrs./ Other *</label>
+                <input type="text" id="title" name="title" placeholder="Mr." required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7713462866">
+
+                <label for="name">Name & Surname: *</label>
+                <input type="text" id="name" name="name" placeholder="Enes Yigit" required>
+
+                <label for="email">Email address: *</label>
+                <input type="email" id="email" name="email" placeholder="example123@gmail.com" required>
+
+                <label for="request">Your Request: *</label>
+                <textarea id="request" name="request" placeholder="I want to get personalized Workouts" required></textarea>
+
+                <input type="submit" value="Submit" class="submit-btn">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <figure class="footer-logo">
+                <img src="img/MyLogo.png" alt="Get Fit Stay Fit Logo" class="logo" title="Logo">
+                <figcaption class="logo-text">Get Fit Stay Fit</figcaption>
+            </figure>
+            <Article class="footer-links">
+                <section class="footer-column">
+                    <a href="index.html">Home</a>
+                    <a href="Community.html">Community</a>
+                    <a href="Contact.html">Contact</a>
+                </section>
+                <section class="footer-column">
+                    <a href="Nutrition.html">Nutrition</a>
+                    <a href="Sleep.html">Sleep</a>
+                    <a href="Exercise.html">Exercise</a>
+                </section>
+            </Article>
+        </section>
+        <p class="copyright">&copy; 2024. All rights reserved</p>
+    </footer>
+</body>
+</html>

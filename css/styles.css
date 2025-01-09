@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.header {
+    background-color:#0EE2B0;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #000;
+    border-style:solid;
+    box-shadow: 0 2px 4px black;
+    background-color: rgba(255, 255, 255, 0.23);
+    transition: all 0.3s ease;
+}
+
+.nav-link:visited {
+    color: #666;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+
+}
+
+.nav-link.active-link {
+    border-color: #0EE2B0;
+}
+
+h1, h2, nav a {
+    text-transform: uppercase;
+}
+
+.HomePage-title-Section {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.HomePage-First-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HomePage-GetFItStayFit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+.content-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.image-section {
+    margin: 2rem 0;
+}
+
+.content-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #0EE2B0;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto; /* Centering the Buttons Finally */
+    float: left
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-column a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.copyright {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+    .HomePage-GetFItStayFit{
+        font-size: 2rem;
+    }
+
+    .footer-logo {
+        position: static;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .content-with-image {
+        flex-direction: column;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+
+    .DetailPage-section {
+        padding: 0 1rem;
+    }
+
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #000000;
+}
+
+/* it is for all of the pages */
+.DetailPage-section {
+    background-color: #f9f9f9; /* I have decided to add this, I know now it looks just a little different from the figma design but otherwise the website looked so unreadable */
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.DetailPage-section h2 {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.DetailPage-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.emphasis-text {
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    text-indent: 1px;
+}
+
+.DetailPage-section ul {
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+}
+
+.DetailPage-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.content-with-image {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem 0;
+    flex-wrap: wrap
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section-image {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.section-image-cat {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 70px;
+}
+
+.FYI {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.goal, .focus {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.myths li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.myth {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.fact {
+    color: #51cf66;
+    font-weight: bold;
+}
+
+.DetailPage-table {
+    margin: 2em 0;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center; 
+
+}
+
+.DetailPage-table table {    
+    width: 80%; 
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.DetailPage-table th,.DetailPage-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.DetailPage-table th {
+    background-color: #0EE2B0;
+    color: #000000;
+}
+
+.DetailPage-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.image-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.disorders-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.disorders-content,.treatment-content {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+}
+
+.final-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.final-sections > div {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px black;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.contact-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.required-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.contact-form legend {
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Style for placeholder text */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto 0;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+.cookie-consent-checkbox {
+    display: none;
+}
+
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Inter', sans-serif;
+}
+
+.cookie-consent p {
+    margin: 0;
+    padding-right: 2rem;
+}
+
+.accept-cookies {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accept-cookies:hover {
+    background-color: #45a049;
+}
+
+.cookie-consent-checkbox:checked + .cookie-consent {
+    display: none;
+}
+
+.nav-link:focus {
+    color: green;
+}
+
+p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
+
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(14, 226, 176, 0.1);
+}
+
+.thankyou-container h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.thankyou-container p {
+    color: #666;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.return-home {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.return-home:hover {
+    background-color: #0cc69b;
+}
