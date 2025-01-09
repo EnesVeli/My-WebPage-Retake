@@ -1,0 +1,5 @@
+Student name: Enes
+Student number: 731228
+Student class: 1 C
+GitHub Repository: https://github.com/EnesVeli?tab=repositories
+GitHub Pages URL: https://github.com/EnesVeli/My-WebPage-Retake
